@@ -18,7 +18,7 @@ export default function HireMe() {
 
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState("");
-  const projectMutation = trpc.muralRequests.submit.useMutation();
+  const sendServiceEnquiryMutation = trpc.email.sendServiceEnquiry.useMutation();
 
   const handleChange = (
     e: React.ChangeEvent<
@@ -42,7 +42,21 @@ export default function HireMe() {
     }
 
     try {
-      await projectMutation.mutateAsync(formData);
+      const detailsText = `
+Service Type: ${formData.serviceType}
+Project Description: ${formData.projectDescription}
+Budget: ${formData.budget || "Not specified"}
+Timeline: ${formData.timeline || "Not specified"}
+Additional Notes: ${formData.additionalNotes || "None"}
+      `.trim();
+
+      await sendServiceEnquiryMutation.mutateAsync({
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone || "",
+        service: formData.serviceType,
+        details: detailsText,
+      });
       setSubmitted(true);
       setFormData({
         name: "",
@@ -326,9 +340,9 @@ export default function HireMe() {
             <Button 
               type="submit" 
               className="w-full"
-              disabled={projectMutation.isPending}
+              disabled={sendServiceEnquiryMutation.isPending}
             >
-              {projectMutation.isPending ? (
+              {sendServiceEnquiryMutation.isPending ? (
                 <>
                   <Loader className="w-4 h-4 mr-2 animate-spin" />
                   Submitting...

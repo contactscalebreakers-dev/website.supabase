@@ -10,6 +10,7 @@ import Home from "./pages/Home";
 import Workshops from "./pages/Workshops";
 import Products from "./pages/Products";
 import Portfolio from "./pages/Portfolio";
+import About from "./pages/About";
 import Contact from "./pages/Contact";
 import AdminProducts from "./pages/AdminProducts";
 import Services from "./pages/Services";
@@ -28,7 +29,7 @@ function Router() {
           <Route path={"/workshops"} component={Workshops} />
           <Route path={"/products"} component={Products} />
           <Route path={"/portfolio"} component={Portfolio} />
-          <Route path={"/about"} component={Portfolio} />
+          <Route path={"/about"} component={About} />
           <Route path={"/contact"} component={Contact} />
           <Route path={"/admin/products"} component={AdminProducts} />
           <Route path={"/services"} component={Services} />

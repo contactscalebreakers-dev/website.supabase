@@ -177,7 +177,7 @@ export default function Workshops() {
                   <h3 className="text-lg font-semibold mb-4">Download Documents</h3>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <a
-                      href="/NDIS_Quickstart_Service_Descriptor.pdf"
+                      href="/NDIS_Quickstart_Service_Descriptor(1).pdf"
                       download
                       className="flex items-center gap-2 p-4 border border-gray-300 rounded-lg hover:bg-gray-50 transition"
                     >
@@ -210,7 +210,7 @@ export default function Workshops() {
                       </div>
                     </a>
                     <a
-                      href="/abndetailsdocument.pdf"
+                      href="/ABN_Details.pdf"
                       download
                       className="flex items-center gap-2 p-4 border border-gray-300 rounded-lg hover:bg-gray-50 transition"
                     >
