@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { trpc } from "@/lib/trpc";
 import { ShoppingCart, Loader, Filter } from "lucide-react";
@@ -52,7 +53,7 @@ export default function Products() {
             Original artwork and collectibles available for purchase right now.
           </p>
           <p className="text-sm text-gray-600">
-            Looking for past work? Check out the <a href="/portfolio" className="text-blue-600 font-semibold hover:underline">Portfolio</a> →
+            Looking for past work? Check out the <Link href="/portfolio" className="text-blue-600 font-semibold hover:underline">Portfolio</Link> →
           </p>
         </div>
       </section>

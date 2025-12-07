@@ -20,7 +20,7 @@ export default function ServicesMurals() {
     additionalNotes: "",
   });
 
-  const submitMuralRequest = trpc.muralRequests.create.useMutation({
+  const submitMuralRequest = trpc.muralRequests.submit.useMutation({
     onSuccess: () => {
       toast.success("Mural request submitted! We'll be in touch soon.");
       setFormData({
