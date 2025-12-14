@@ -92,7 +92,7 @@ export const appRouter = router({
             category: "canvas" as const,
             price: 450,
             stock: 1,
-            imageUrl: "/portfolio-canvas.jpg",
+            imageUrl: "/portfolio-canvas.webp",
             isOneOfOne: true,
           },
           {
@@ -102,7 +102,7 @@ export const appRouter = router({
             category: "diorama" as const,
             price: 280,
             stock: 3,
-            imageUrl: "/portfolio-street-art.jpg",
+            imageUrl: "/portfolio-street-art.webp",
             isOneOfOne: false,
           },
         ];
