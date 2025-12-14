@@ -45,7 +45,7 @@ async function seed() {
         location: 'B.Y.O. - 2-4 Edmundstone Street, West End, Brisbane',
         price: '85',
         capacity: '23',
-        imageUrl: '/workshops/designer-toy.jpg'
+        imageUrl: '/workshops/designer-toy.webp'
       },
       {
         id: crypto.randomUUID(),
@@ -56,7 +56,7 @@ async function seed() {
         location: 'B.Y.O. - 2-4 Edmundstone Street, West End, Brisbane',
         price: '75',
         capacity: '23',
-        imageUrl: '/workshops/street-art.jpg'
+        imageUrl: '/workshops/street-art.webp'
       },
       {
         id: crypto.randomUUID(),
@@ -67,7 +67,7 @@ async function seed() {
         location: 'B.Y.O. - 2-4 Edmundstone Street, West End, Brisbane',
         price: '90',
         capacity: '23',
-        imageUrl: '/workshops/diorama.jpg'
+        imageUrl: '/workshops/diorama.webp'
       },
     ];
 
@@ -94,7 +94,7 @@ async function seed() {
         category: '3d-model',
         price: '350',
         stock: '5',
-        imageUrl: '/portfolio-character.png',
+        imageUrl: '/portfolio-character.webp',
         isOneOfOne: 'false',
       },
       {
@@ -104,7 +104,7 @@ async function seed() {
         category: 'canvas',
         price: '450',
         stock: '1',
-        imageUrl: '/portfolio-canvas.jpg',
+        imageUrl: '/portfolio-canvas.webp',
         isOneOfOne: 'true',
       },
       {
@@ -114,7 +114,7 @@ async function seed() {
         category: 'diorama',
         price: '280',
         stock: '3',
-        imageUrl: '/portfolio-street-art.jpg',
+        imageUrl: '/portfolio-street-art.webp',
         isOneOfOne: 'false',
       },
     ];
@@ -140,7 +140,7 @@ async function seed() {
         title: 'Urban Street Art - Hi There',
         description: 'Creative street art mural featuring flowing calligraphy and artistic elements. A vibrant piece that brings life to urban spaces.',
         category: 'mural',
-        imageUrl: '/portfolio-hithere.jpg',
+        imageUrl: '/portfolio-hithere.webp',
       },
       {
         id: crypto.randomUUID(),
@@ -154,7 +154,7 @@ async function seed() {
         title: 'Abstract Canvas - Neon Energy',
         description: 'Vibrant abstract canvas with bold geometric shapes and neon colors. A dynamic piece exploring the intersection of street art and fine art.',
         category: 'canvas',
-        imageUrl: '/portfolio-canvas.jpg',
+        imageUrl: '/portfolio-canvas.webp',
       },
     ];
 
